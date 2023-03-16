@@ -1,8 +1,24 @@
 # Todo-list-react
 
+![Page image](public/todo-list.jpg)
+
 ## Demo
 
 https://wroblewski82.github.io/todo-list-react/
+
+## Description
+
+The todo-list app is a simple but very practical project that was created for the youcode course. The project is currently in the development phase. It was based on React.js. When writing code, I put special emphasis on the use of accepted conventions and good practices.
+
+The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.linkedin.com/in/dabrowskisoftware) - an experienced Senior Software Engineer.
+
+## Technologies
+
+- Semantic HTML
+- BEM
+- CSS
+- Grid
+- Media queries
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

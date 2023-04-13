@@ -1,6 +1,6 @@
 # Todo-list-react
 
-![Page image](public/todo-list.jpg)
+![Animated page image](public/todo-list.gif)
 
 ## Demo
 
@@ -8,7 +8,7 @@ https://wroblewski82.github.io/todo-list-react/
 
 ## Description
 
-The todo-list app is a simple but very practical project that was created for the youcode course. The project is currently in the development phase. It was based on React.js. When writing code, I put special emphasis on the use of accepted conventions and good practices.
+The todo-list app is a simple but very practical project that was created for the youcode course. It was based on React.js. When writing code, I put special emphasis on the use of accepted conventions and good practices.
 
 The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.linkedin.com/in/dabrowskisoftware) - an experienced Senior Software Engineer.
 
@@ -19,6 +19,24 @@ The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.l
 - CSS
 - Grid
 - Media queries
+- ES6+ features
+- Immutability
+- React.js
+- Create react app
+- Webpack
+- Babel.js
+
+## Instruction
+
+Enter the task you want to add to the task list. Click the "Dodaj zadanie" button and you'll see it at the bottom of the app as the next item in the list.
+
+If you want to select the task as done, click on the green icon. If you want to change your mind, click the green icon again.
+
+You can use the "Ukryj/pokaż ukończone" button to hide or show completed tasks in the list, as well as the "Ukończ wszystkie" button to mark all tasks as completed.
+
+If you want to delete your task, click on the red icon.
+
+## Additional information
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

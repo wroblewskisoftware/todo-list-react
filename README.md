@@ -1,6 +1,6 @@
 # Todo-list-react
 
-![Animated page image](public/todo-list.gif)
+![Animated page image](todo-list.gif)
 
 ## Demo
 

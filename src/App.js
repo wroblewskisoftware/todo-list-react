@@ -4,11 +4,17 @@ import Section from "./Section";
 import Form from "./Form";
 import Buttons from "./Buttons";
 import Tasks from "./Tasks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);

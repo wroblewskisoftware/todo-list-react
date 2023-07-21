@@ -1,4 +1,4 @@
-import "./style.css";
+import { Sheet, Input, Button } from "./styled";
 import { useState, useRef } from "react";
 
 const Form = ({ addNewTask }) => {
@@ -21,18 +21,16 @@ const Form = ({ addNewTask }) => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <input
+    <Sheet onSubmit={onFormSubmit}>
+      <Input
         className="form__input"
         placeholder="Co jest do zrobienia?"
         value={newTaskContent}
         onChange={({ target }) => setNewTaskContent(target.value)}
         ref={inputRef}
       />
-      <button className="form__button" onClick={focusInput}>
-        Dodaj zadanie
-      </button>
-    </form>
+      <Button onClick={focusInput}>Dodaj zadanie</Button>
+    </Sheet>
   );
 };
 

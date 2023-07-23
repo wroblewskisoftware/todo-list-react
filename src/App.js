@@ -1,10 +1,10 @@
 import GlobalStyle from "./globalStyles";
 import Container from "./Container";
-import Header from "./Header";
-import Section from "./Section";
-import Form from "./Form";
-import Buttons from "./Buttons";
-import Tasks from "./Tasks";
+import Header from "./Container/Header";
+import Section from "./Container/Section";
+import Form from "./Container/Section/Form";
+import Buttons from "./Container/Section/Buttons";
+import Tasks from "./Container/Section/Tasks";
 import { useState } from "react";
 import { useTasks } from "./useTasks";
 

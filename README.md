@@ -23,6 +23,8 @@ The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.l
 - Immutability
 - React.js
 - Create react app
+- Local Storage
+- Styled Components
 - Webpack
 - Babel.js
 

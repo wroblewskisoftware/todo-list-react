@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 
-export const Unit = styled.section`
+export const StyledSection = styled.section`
   margin: 10px 0;
   background: #ffffff;
   box-shadow: 0 0 5px #bababa;
 `;
 
-export const Header = styled.div`
+export const StyledHeader = styled.div`
   padding: 20px;
   border-bottom: 1px solid #e6e6e6;
 
@@ -23,11 +23,11 @@ export const Header = styled.div`
     `}
 `;
 
-export const Title = styled.h2`
+export const StyledH2 = styled.h2`
   font-size: 20px;
   margin: 0;
 `;
 
-export const Body = styled.div`
+export const StyledBody = styled.div`
   padding: 20px;
 `;

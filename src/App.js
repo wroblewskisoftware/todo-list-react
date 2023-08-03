@@ -1,10 +1,9 @@
 import GlobalStyle from "./globalStyles";
-import Container from "./Container";
-import Header from "./Container/Header";
-import Section from "./Container/Section";
-import Form from "./Container/Section/Form";
-import Buttons from "./Container/Section/Buttons";
-import Tasks from "./Container/Section/Tasks";
+import Header from "./Header";
+import Section from "./Section";
+import Form from "./Section/Form";
+import Buttons from "./Section/Buttons";
+import Tasks from "./Section/Tasks";
 import { useState } from "react";
 import { useTasks } from "./useTasks";
 
@@ -21,32 +20,30 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Container>
-        <Header title="Lista zadań" />
-        <Section
-          title="Dodaj nowe zadanie"
-          body={<Form addNewTask={addNewTask} />}
-        />
-        <Section
-          title="Lista zadań"
-          body={
-            <Tasks
-              tasks={tasks}
-              hideDone={hideDone}
-              removeTask={removeTask}
-              toggleTaskDone={toggleTaskDone}
-            />
-          }
-          extraHeaderContent={
-            <Buttons
-              tasks={tasks}
-              hideDone={hideDone}
-              toggleHideDone={toggleHideDone}
-              setAllDone={setAllDone}
-            />
-          }
-        />
-      </Container>
+      <Header title="Lista zadań" />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form addNewTask={addNewTask} />}
+      />
+      <Section
+        title="Lista zadań"
+        body={
+          <Tasks
+            tasks={tasks}
+            hideDone={hideDone}
+            removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
+          />
+        }
+        extraHeaderContent={
+          <Buttons
+            tasks={tasks}
+            hideDone={hideDone}
+            toggleHideDone={toggleHideDone}
+            setAllDone={setAllDone}
+          />
+        }
+      />
     </>
   );
 }

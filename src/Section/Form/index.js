@@ -23,7 +23,6 @@ const Form = ({ addNewTask }) => {
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <StyledInput
-        className="form__input"
         placeholder="Co jest do zrobienia?"
         value={newTaskContent}
         onChange={({ target }) => setNewTaskContent(target.value)}

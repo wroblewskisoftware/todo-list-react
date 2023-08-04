@@ -1,9 +1,9 @@
 import { Container } from "./Container/styled";
-import Header from "./Header";
-import Section from "./Section";
-import Form from "./Section/Form";
-import Buttons from "./Section/Buttons";
-import Tasks from "./Section/Tasks";
+import Header from "./Container/Header";
+import Section from "./Container/Section";
+import Form from "./Container/Section/Form";
+import Buttons from "./Container/Section/Buttons";
+import Tasks from "./Container/Section/Tasks";
 import { useState } from "react";
 import { useTasks } from "./useTasks";
 

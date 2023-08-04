@@ -23,6 +23,7 @@ The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.l
 - Immutability
 - React.js
 - Create react app
+- Custom Hooks
 - Local Storage
 - Styled Components
 - Webpack

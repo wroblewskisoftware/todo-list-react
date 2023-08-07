@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e6e6e6;
+  background-color: ${({ theme }) => theme.color.mercury};
   word-break: break-word;
   max-width: 900px;
   padding: 20px;

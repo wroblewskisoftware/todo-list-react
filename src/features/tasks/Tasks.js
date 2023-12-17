@@ -7,7 +7,7 @@ import TasksList from "./TasksList";
 import { useTasks } from "../../useTasks";
 
 const Tasks = () => {
-  const { removeTask, toggleTaskDone, setAllDone } = useTasks();
+  const { removeTask, setAllDone } = useTasks();
 
   return (
     <Container>
@@ -15,9 +15,7 @@ const Tasks = () => {
       <Section title="Dodaj nowe zadanie" body={<Form />} />
       <Section
         title="Lista zadań"
-        body={
-          <TasksList removeTask={removeTask} toggleTaskDone={toggleTaskDone} />
-        }
+        body={<TasksList removeTask={removeTask} />}
         extraHeaderContent={<Buttons setAllDone={setAllDone} />}
       />
     </Container>

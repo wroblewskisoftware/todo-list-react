@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { selectLoadingState, fetchExampleTasks } from "../tasksSlice";
-import { StyledButton } from "../StyledButton";
+import { selectLoadingState, fetchExampleTasks } from "../../tasksSlice";
+import { StyledButton } from "../../StyledButton";
 
 const Button = () => {
   const isLoading = useSelector(selectLoadingState);

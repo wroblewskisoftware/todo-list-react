@@ -49,7 +49,12 @@ export const {
   fetchExampleTasksSuccess,
   fetchExampleTasksError,
 } = tasksSlice.actions;
+
 export const selectTasksState = (state) => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectLoadingState = (state) => selectTasksState(state).isLoading;
+
+export const getTaskById = (state, taskId) =>
+  selectTasks(state).find(({ id }) => id === taskId);
+
 export default tasksSlice.reducer;

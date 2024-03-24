@@ -10,15 +10,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledInput = styled.input`
-  padding: 10px;
-  border: 1px solid ${({ theme }) => theme.color.mercury};
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 17px;
-  }
-`;
-
 export const StyledButton = styled.button`
   padding: 10px;
   background-color: ${({ theme }) => theme.color.teal};

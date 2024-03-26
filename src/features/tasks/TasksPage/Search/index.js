@@ -1,24 +1,34 @@
-import { useLocation, useHistory } from "react-router-dom";
+// import { useLocation, useHistory } from "react-router-dom";
 import { StyledInput } from "../../Input";
 import { StyledDiv } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
+import {
+  useQueryParameter,
+  useReplaceQueryParameter,
+} from "../../queryParameters";
 
 const Search = () => {
-  const location = useLocation();
-  const history = useHistory();
-  const query = new URLSearchParams(location.search).get(searchQueryParamName);
+  // const location = useLocation();
+  // const history = useHistory();
+  const query = useQueryParameter(searchQueryParamName);
+  const replaceQueryParameter = useReplaceQueryParameter();
 
   const onInputChange = ({ target }) => {
-    const searchParams = new URLSearchParams(location.search);
-
-    if (target.value.trim() === "") {
-      searchParams.delete(searchQueryParamName);
-    } else {
-      searchParams.set(searchQueryParamName, target.value);
-    }
-
-    history.push(`${location.pathname}?${searchParams.toString()}`);
+    replaceQueryParameter({
+      key: searchQueryParamName,
+      value: target.value.trim() !== "" ? target.value : undefined,
+    });
   };
+  //   const searchParams = new URLSearchParams(location.search);
+
+  //   if (target.value.trim() === "") {
+  //     searchParams.delete(searchQueryParamName);
+  //   } else {
+  //     searchParams.set(searchQueryParamName, target.value);
+  //   }
+
+  //   history.push(`${location.pathname}?${searchParams.toString()}`);
+  // };
 
   return (
     <StyledDiv>

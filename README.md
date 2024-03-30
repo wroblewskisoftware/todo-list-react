@@ -1,6 +1,6 @@
 # Todo-list-react
 
-![Animated page image](todo-list.gif)
+![todo-list](todo-list.jpg)
 
 ## Demo
 
@@ -22,7 +22,9 @@ The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.l
 - ES6+ features
 - Immutability
 - React.js
+- React Router
 - Redux Toolkit
+- Redux-Saga
 - Create react app
 - Custom Hooks
 - Local Storage
@@ -32,13 +34,19 @@ The correctness of my work is supervised by [Krzysztof Dąbrowski](https://www.l
 
 ## Instruction
 
-Enter the task you want to add to the task list. Click the "Dodaj zadanie" button and you'll see it at the bottom of the app as the next item in the list.
+There is navigation at the top of the app. Click the "O autorze" button to read a few words about the author of this application. Click the "Zadania" button to go to the application's home page.
 
-If you want to select the task as done, click on the green icon. If you want to change your mind, click the green icon again.
+Enter the task you want to add to your task list. Click the "Dodaj zadanie" button and you'll see it at the bottom of the app as the next item on the list. If you want to familiarize yourself with how the application works, you can also use the "Pobierz przykładowe zadania" button to add two sample tasks to the list.
 
-You can use the "Ukryj/pokaż ukończone" button to hide or show completed tasks in the list, as well as the "Ukończ wszystkie" button to mark all tasks as completed.
+If you want to mark the task as completed, click the green icon. If you want to change your mind, click the green icon again.
 
-If you want to delete your task, click on the red icon.
+You can use the "Ukryj/Pokaż ukończone" button to hide or show completed tasks in the list, and the "Ukończ wszystko" button to mark all tasks as completed.
+
+You can find a specific task by entering its content in the search engine.
+
+Clicking on the selected task will take you to the task subpage.
+
+If you want to delete your task, click the red icon.
 
 ## Additional information
 

@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../../queryParameters";
+import { toTask } from "../../../../routes";
 import {
   StyledList,
   StyledItem,
@@ -33,7 +34,7 @@ const TasksList = () => {
             {task.done ? "✔" : ""}
           </StyledButton>
           <StyledSpan done={task.done}>
-            <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+            <StyledLink to={toTask({ id: task.id })}>{task.content}</StyledLink>
           </StyledSpan>
           <StyledButton remove onClick={() => dispatch(removeTask(task.id))}>
             🗑

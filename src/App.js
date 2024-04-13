@@ -1,5 +1,6 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { StyledList, StyledItem, StyledNavLink } from "./styled";
+import { toTasks, toAuthor, toTask } from "./routes";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
@@ -9,25 +10,25 @@ const App = () => (
     <nav>
       <StyledList>
         <StyledItem>
-          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+          <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
         </StyledItem>
         <StyledItem>
-          <StyledNavLink to="/autor">O autorze</StyledNavLink>
+          <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
         </StyledItem>
       </StyledList>
     </nav>
     <Switch>
-      <Route path="/zadania/:id">
+      <Route path={toTask()}>
         <TaskPage />
       </Route>
-      <Route path="/zadania">
+      <Route path={toTasks()}>
         <TasksPage />
       </Route>
-      <Route path="/autor">
+      <Route path={toAuthor()}>
         <AuthorPage />
       </Route>
       <Route path="/">
-        <Redirect to="/zadania" />
+        <Redirect to={toTasks()} />
       </Route>
     </Switch>
   </HashRouter>

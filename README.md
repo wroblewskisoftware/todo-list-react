@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://wroblewski82.github.io/todo-list-react/
+https://wroblewskisoftware.github.io/todo-list-react/
 
 ## Description
 
